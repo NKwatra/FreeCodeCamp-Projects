@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <div class="container">
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+            <form id="survey-form">
+                <label for="name" class="text-right" id="name-label"><sup>*</sup>Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" class="larger" required>
+                <label for="email" class="text-right" id="email-label"><sup>*</sup>Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" class="larger" required>
+                <label for="number" class="text-right" id="number-label"><sup>*</sup>Age:</label>
+                <input type="number" min="15" max="65" id="number" placeholder="Age" class="larger" required>
+                <label for="dropdown" class="text-right">Which option best describes your current role?</label>
+                <select id="dropdown">
+                    <option disabled>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="full_time_job">Full time job</option>
+                    <option value="full_time_learner">Full time learner</option>
+                    <option value="prefer_no_to_say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                <label class="text-right"><sup>*</sup> How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <div class="grid-div">
+                    <input type="radio" name="recommend" value="definitely" id="rec1">
+                    <label for="rec1">Definitely</label>
+                    <input type="radio" name="recommend" value="may_be" id="rec2">
+                    <label for="rec2">May be</label>
+                    <input type="radio" name="recommend" value="not_sure" id="rec3">
+                    <label for="rec3">Not sure</label>
+                </div>
+                <label for="like" class="text-right">What do you like most in FCC:</label>
+                <select id="like">
+                    <option disabled selected>Select a choice</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open_source">Open Source</option>
+                </select>
+                <label class="text-right">Things that should be improved in the future (Check all that apply):</label>
+                <div class="grid-div">
+                    <input type="checkbox" value="front_end_projects" id="change1" name="change">
+                    <label for="change1">Front-end Projects</label>
+                    <input type="checkbox" value="back_end_projects" id="change2" name="change">
+                    <label for="change2">Back-end Projects</label>
+                    <input type="checkbox" value="data_visualization" id="change3" name="change">
+                    <label for="change3">Data Visualization</label>
+                    <input type="checkbox" value="challenges" id="change4" name="change">
+                    <label for="change4">Challenges</label>
+                    <input type="checkbox" value="open_source_community" id="change5" name="change">
+                    <label for="change5">Open Source Community</label>
+                    <input type="checkbox" value="gitter_help_rooms" id="change6" name="change">
+                    <label for="change6">Gitter Help Rooms</label>
+                    <input type="checkbox" value="videos" id="change7" name="change">
+                    <label for="change7">Videos</label>
+                    <input type="checkbox" value="city_meetups" id="change8" name="change">
+                    <label for="change8">City Meetups</label>
+                    <input type="checkbox" value="wiki" id="change9" name="change">
+                    <label for="change9">Wiki</label>
+                    <input type="checkbox" value="forum" id="change10" name="change">
+                    <label for="change10">Forum</label>
+                    <input type="checkbox" value="additional_courses" id="change11" name="change">
+                    <label for="change11">Additional Courses</label>
+                </div>
+                <label class="text-right" for="other_suggestions">Any Comments or Suggestions?</label>
+                <textarea id="other_suggestions" rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+                <div class="central">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
