@@ -1,0 +1,15 @@
+.sub-heading{
+    font-size: 1.3rem;
+}
+
+.title-text{
+    font-size: 2rem;
+}
+
+.toolTip{
+    background: lightsteelblue;
+    padding: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+    position: absolute;
+}
